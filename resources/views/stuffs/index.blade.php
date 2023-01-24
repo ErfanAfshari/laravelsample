@@ -25,6 +25,7 @@
                 <th>price</th>
                 <th>image</th>
                 <th>edit</th>
+                <th>delete item</th>
             </thead>
             <tbody>
                 <tbody>
@@ -35,13 +36,15 @@
                             <td> {{ $stuff->price}}  </td>
                             <td> {{ $stuff->image}}  </td>
                             <td>
-                                <form action="{{route('deleteproduct',['id'=>$stuff->id])}}" method="post">
+                                <a href="{{route('updateproduct',['id'=>$stuff->id])}}" target="_blank" class="btn btn-outline-primary" > Update </a> | 
+                                <a href="{{route('showproduct',['id'=>$stuff->id])}}" target="_blank" class="btn btn-outline-dark" > Show </a>
+                            </td>
+                            <td>
+                            <form action="{{route('deleteproduct',['id'=>$stuff->id])}}" method="post">
                                     @csrf
                                     <input type="hidden" name="_method" value="delete">
-                                    <input type="submit" value="Delete" class="btn btn-danger deletesubmit">   
-                                </form> | 
-                                <a href="{{route('updateproduct',['id'=>$stuff->id])}}" target="_blank" class="btn btn-primary" > Update </a> | 
-                                <a href="{{route('showproduct',['id'=>$stuff->id])}}" target="_blank" class="btn btn-outline-dark" > Show </a>
+                                    <input type="submit" value="Delete" class="btn btn-outline-danger deletesubmit">   
+                                </form> 
                             </td>
                         </tr>
                     @endforeach

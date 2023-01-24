@@ -35,7 +35,7 @@
                 </div>
             </div>
             
-            <input type="submit" class="btn btn-success" value="ذخیره" style="margin:auto;margin-top:20px;">
+            <input type="submit" class="btn btn-success" value=" Save changes " style="margin:auto;margin-top:20px;">
            
         </form>    
     </div>

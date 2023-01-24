@@ -23,4 +23,6 @@ Route::get('insertproduct',  [StuffController::class,'insert'])->name('insertpro
 Route::post('storeproduct',  [StuffController::class,'store'])->name('storeproduct');
 Route::get('updateproduct/{id}',  [StuffController::class,'update'])->name('updateproduct');
 Route::put('editproduct',  [StuffController::class,'edit'])->name('editproduct');
+Route::get('showproduct/{id}',  [StuffController::class,'show'])->name('showproduct');
+Route::delete('deleteproduct/{id}',  [StuffController::class,'delete'])->name('deleteproduct');
 

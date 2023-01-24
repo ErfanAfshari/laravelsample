@@ -18,7 +18,6 @@ class StuffController extends Controller
     public function insert()
     {
        return view ('stuffs.insert');
-    
     }
     public function store(Request $request)
     {
@@ -31,14 +30,11 @@ class StuffController extends Controller
         return redirect (route('stuffs.index'));
         //dd('The product stored succefully');  
     }
-
     public function update($id)
     {
         $stuff = Stuff::find($id);
-        return view('stuffs.update',['stuff'=>$stuff]);
-        
+        return view('stuffs.update',['stuff'=>$stuff]);  
     }
-
     public function edit(Request $request)
     {
         $stuff = Stuff::find($request->id);
@@ -47,7 +43,20 @@ class StuffController extends Controller
         $stuff->image = $request->image;
         $stuff->save();
         return redirect (route('stuffs.index'));
+    }
+    public function show($id)
+    {
+        $stuff = Stuff::find($id);
+        return view ('stuffs.show',['stuff'=>$stuff]);
+    }
+    public function delete($id)
+    {
+        $stuff = Stuff::find($id);
+        $stuff->delete();
+        return redirect (route('stuffs.index'));
 
     }
+    
+    
 }
 

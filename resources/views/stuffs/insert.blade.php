@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <script
@@ -109,19 +110,19 @@
             <div class="form-row">
                 <div class="form-group">
                     <label for="title">Title</label>
-                    <input type="text"  name="title" class="form-control" value="" placeholder="عنوان محصول">
+                    <input type="text"  name="title" class="form-control" value="" placeholder="type here">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group">
                     <label for="price">Price</label>
-                    <input type="text" name="price" class="form-control" value="" placeholder="قیمت محصول">
+                    <input type="text" name="price" class="form-control" value="" placeholder="type here">
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group">
                     <label for="image">Image</label>
-                    <input type="text" name="image" class="form-control" value="" placeholder="تصویر محصول">
+                    <input type="text" name="image" class="form-control" value="" placeholder="type here">
                 </div>
             </div>
             
@@ -129,6 +130,8 @@
             <div class="row">
             <input type="submit" class="btn btn-outline-success"  value=" Save " style="margin:auto;margin-top:20px;">
             </div>
+            
+
            
         </form>    
     </div>       

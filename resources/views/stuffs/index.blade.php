@@ -23,6 +23,7 @@
     <title>Admin Dashboard Panel</title> 
 </head>
 <body>
+    
     <nav>
         <div class="logo-name">
             <div class="logo-image">

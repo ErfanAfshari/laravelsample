@@ -34,17 +34,17 @@
 
         <div class="menu-items">
             <ul class="nav-links">
-                <li><a href="#">
+                <li><a href="stuffs">
                     <i class="uil uil-estate"></i>
                     <span class="link-name">Dahsboard</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="insertproduct">
                     <i class="uil uil-files-landscapes"></i>
-                    <span class="link-name">Content</span>
+                    <span class="link-name">Add product</span>
                 </a></li>
-                <li><a href="#">
+                <li><a href="stuffs">
                     <i class="uil uil-chart"></i>
-                    <span class="link-name">Analytics</span>
+                    <span class="link-name">List</span>
                 </a></li>
                 <li><a href="#">
                     <i class="uil uil-thumbs-up"></i>

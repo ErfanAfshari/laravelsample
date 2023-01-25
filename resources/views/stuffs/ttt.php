@@ -95,7 +95,7 @@
         <div class="dash-content">
             <div class="overview">
                 <div class="title">
-                <i class="material-icons">add</i>
+                <i class="material-icons">list</i>
                 <span class="text">Insert Products Form</span>
                 </div>
             </div>
@@ -125,10 +125,7 @@
                 </div>
             </div>
             
-          
-            <div class="row">
-            <input type="submit" class="btn btn-outline-success"  value=" Save " style="margin:auto;margin-top:20px;">
-            </div>
+            <input type="submit" class="btn btn-outline-success" value=" Save " style="margin:auto;margin-top:20px;">
            
         </form>    
     </div>       

@@ -51,6 +51,9 @@
                             <div class="d-grid mx-auto">
                                 <button type="submit" class="btn btn-dark btn-block" >Sign in</button>
                             </div>
+                            <div style="margin:auto;margin-top:10px;">
+                            <a href="{{route('register-user')}}" class="btn btn-outline-dark">Sign up</a>
+                            </div>
                         </form>
                     </div>
                 </div>

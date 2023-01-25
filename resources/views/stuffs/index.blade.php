@@ -62,7 +62,7 @@
             </ul>
             
             <ul class="logout-mode">
-                <li><a href="#">
+                <li> <a href="{{route('login.custom')}}" method="post"> @csrf
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
                 </a></li>
@@ -103,7 +103,7 @@
         </div>
                 
     
-    <div class="col-md-11" style="margin:auto;margin-top:12px;">
+    <div class="col-md-11" style="margin:auto;margin-top:60px;">
         
         <table class="table table-bordered" style="marfin-top:20px;">
             <thead>

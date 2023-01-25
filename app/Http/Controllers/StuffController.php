@@ -5,15 +5,21 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Stuff;
+use Illuminate\Support\Facades\Auth;
 
 class StuffController extends Controller
 {
     public function index()
     {
-        $stuffs = Stuff::all();
+        if(Auth::check())
+        {
+            $stuffs = Stuff::all();
         //dd($stuffs);
 
         return view ('stuffs.index',['stuffs'=> $stuffs]);
+        }
+        abort(401);
+        
     }
     public function insert()
     {

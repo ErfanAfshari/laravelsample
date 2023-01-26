@@ -43,7 +43,7 @@
 
 				<div class="login100-form validate-form">
 					<span class="login100-form-title">
-						Admin Login
+						Admin Sign Up
 					</span>
 
 					<form action="{{ route('register.custom') }}" method="POST">

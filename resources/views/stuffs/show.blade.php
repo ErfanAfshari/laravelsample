@@ -25,7 +25,7 @@
 </head>
 <body>
     
-    <nav>
+<nav>
         <div class="logo-name">
             <div class="logo-image">
                 <img src="images/logo.png" alt="">
@@ -36,15 +36,15 @@
 
         <div class="menu-items">
             <ul class="nav-links">
-            <li><a href="http://localhost/laravelsample/public/stuffs">
+                <li><a href="{{route('stuffs.index')}}">
                     <i class="uil uil-estate"></i>
                     <span class="link-name">Dahsboard</span>
                 </a></li>
-                <li><a href="http://localhost/laravelsample/public/insertproduct">
+                <li><a href="{{route('insertproduct')}}">
                     <i class="uil uil-files-landscapes"></i>
                     <span class="link-name">Add product</span>
                 </a></li>
-                <li><a href="http://localhost/laravelsample/public/stuffs">
+                <li><a href="{{route('stuffs.index')}}">
                     <i class="uil uil-chart"></i>
                     <span class="link-name">List</span>
                 </a></li>
@@ -63,7 +63,7 @@
             </ul>
             
             <ul class="logout-mode">
-                <li><a href="#">
+                <li> <a href="{{route('login')}}" >
                     <i class="uil uil-signout"></i>
                     <span class="link-name">Logout</span>
                 </a></li>

@@ -57,7 +57,7 @@
                                 <button type="submit" class="btn btn-dark btn-block">Sign up</button>
                             </div>
                             <div style="margin:auto;margin-top:10px;">
-                            <a href="{{route('login.custom')}}" class="btn btn-outline-dark" method="post">I have account</a>
+                            <a href="{{route('login')}}" class="btn btn-outline-dark">I have account</a>
                             </div>
                         </form>
                     </div>

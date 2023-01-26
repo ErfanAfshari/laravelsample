@@ -17,8 +17,7 @@
     <title>Login</title>
 </head>
 <body>
-<div class="col-md-11" style="margin:auto;margin-top:120px;">  
-
+<div class="col-md-11" style="margin:auto;margin-top:120px;"> 
 <main class="login-form">
     <div class="cotainer">
         <div class="row justify-content-center">

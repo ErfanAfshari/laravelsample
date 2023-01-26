@@ -103,17 +103,20 @@
         </div>
                 
     
-    <div class="col-md-11" style="margin:auto;margin-top:60px;">
-        
+    
+    <div class="row justify-content-center">
+        <div class="col-md-11"  style="margin:auto;margin-top:25px;">
+        <div class="form-control">
         <table class="table table-bordered" style="marfin-top:20px;">
             <thead>
-                <th>id</th>
-                <th>title</th>
-                <th>price</th>
-                <th>image</th>
-                <th>edit</th>
-                <th>delete item</th>
+                <th><h5 class="text-center">id</h5></th>
+                <th><h5 class="text-center">title</h5></th>
+                <th><h5 class="text-center">price</h5></th>
+                <th><h5 class="text-center">image</h5></th>
+                <th><h5 class="text-center">edit</h5></th>
+                <th><h5 class="text-center">delete item</h5></th>
             </thead>
+
             <tbody>
                 <tbody>
                     @foreach ($stuffs as $stuff)
@@ -123,14 +126,18 @@
                             <td> {{ $stuff->price}}  </td>
                             <td> {{ $stuff->image}}  </td>
                             <td>
+                            <div class="text-center">   
                             <div style="margin:auto"><a href="{{route('updateproduct',['id'=>$stuff->id])}}" target="_blank" class="btn btn-outline-primary" > Update </a></div>
                             <div style="margin:auto;margin-top:5px;"><a href="{{route('showproduct',['id'=>$stuff->id])}}" target="_blank" class="btn btn-outline-dark" > Show </a></div>
+                            </div>   
                             </td>
                             <td>
                             <form action="{{route('deleteproduct',['id'=>$stuff->id])}}" method="post">
                                     @csrf
+                                    <div class="text-center">
                                     <input type="hidden" name="_method" value="delete">
-                                    <input type="submit" value="Delete" class="btn btn-outline-danger deletesubmit">   
+                                    <input type="submit" value="Delete" class="btn btn-outline-danger deletesubmit">
+                                    </div>   
                                 </form> 
                             </td>
                         </tr>
@@ -138,7 +145,8 @@
                 </tbody>  
             </tbody>       
         </table>
-    
+        </div>
+        </div>
     </div>
     <div class="dash-content">
             <div class="overview">

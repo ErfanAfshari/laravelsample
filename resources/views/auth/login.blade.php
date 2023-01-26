@@ -51,6 +51,7 @@
                                 <button type="submit" class="btn btn-dark btn-block" >Sign in</button>
                             </div>
                             <div style="margin:auto;margin-top:10px;">
+                            <i class="material-icons">link</i>
                             <a href="{{route('register-user')}}" class="btn btn-outline-dark">Sign up</a>
                             </div>
                         </form>
